@@ -1,0 +1,60 @@
+#movies img {
+    width: 50%;
+}
+
+#movie img {
+    padding: 10%;
+    float: right;
+}
+
+@media only screen and (max-width: 810px) {
+    #movies img {
+        width: 75%;
+    }
+    
+    #movie img {
+        margin-top: 10%;
+        padding: 5%;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    #movie img {
+        margin-right: 5%;
+        padding: none;
+    }
+}
+
+#movies .col-md-3 .well {
+    height: 100%;
+    margin-bottom: 10%;
+}
+
+#movies .col-md-3 img {
+    margin-top: 10%;
+    padding-bottom: 10px;
+}
+
+.mainTitle {
+    font-size: x-large;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.contentTitle {
+margin-top: 10%;
+font-size: x-large;
+text-align: center;
+} 
+
+.movieTitle {
+    font-size: medium;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-bottom: 5%;
+  }
+
+.ratingDivider {
+    margin-top: 2%;
+}
