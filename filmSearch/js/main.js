@@ -16,9 +16,11 @@ function getMovies(searchText){
                 output += `
                     <div class="col-md-3">
                         <div class="well text-center">
-                            <img src="${movie.Poster}">
-                            <h5 class="movieTitle">${movie.Title}</h5>
-                            <a onclick="movieSelected('${movie.imdbID}')" style="text-decoration:none" class="btn-sm btn-warning" href="#">View Details</a>
+                            <div class="item">
+                                <img src="${movie.Poster}">
+                                <h5 class="movieTitle">${movie.Title}</h5>
+                                <a onclick="movieSelected('${movie.imdbID}')" style="text-decoration:none" class="btn-sm btn-warning" href="#">View Details</a>
+                            </div>
                         </div>
                     </div>
                 `;
@@ -51,7 +53,9 @@ function getMovie(){
                 <img src="${movie.Poster}" class="thumbnail">
             </div>
             <div class="col-md-5">
-                <h3 class="contentTitle text-warning">${movie.Title}</h2>
+                <div class="contentBox">
+                    <h3 class="contentTitle">${movie.Title}</h2>
+                </div>    
                 <ul class="list-group">
                     <li class="list-group-item"><strong>Genre</strong>: ${movie.Genre}</li>
                     <li class="list-group-item"><strong>Rated</strong>: ${movie.Rated}</li>
@@ -72,7 +76,7 @@ function getMovie(){
                     ${movie.Plot}
                     <hr>
                     <a class="btn btn-warning" href="http://imdb.com/title/${movie.imdbID}" target="_blank">View on IMDb</a>
-                    <a class="btn btn-primary" href="index.html">Go Back</a>
+                    <a class="btn btn-primary" href="index.html">Go Back</a> 
                 </div>
             </div>
         </div>
