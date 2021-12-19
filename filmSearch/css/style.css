@@ -1,5 +1,5 @@
 #movies img {
-    width: 50%;
+    width: 70%;
 }
 
 #movie img {
@@ -9,13 +9,29 @@
 
 @media only screen and (max-width: 810px) {
     #movies img {
-        width: 75%;
+        width: 100%;
+    }
+
+    #movies .col-md-4 .item {
+        width: 100%;
     }
     
+
+    .btn-sm {
+        text-size-adjust:auto;
+        padding: .25rem;
+    }
+
     #movie img {
         margin-top: 10%;
         padding: 5%;
     }
+
+    #movie .contentTitle {
+        margin-top: 20%;
+        font-size: larger;
+        text-align: center;
+    } 
 }
 
 @media only screen and (max-width: 415px) {
@@ -23,20 +39,25 @@
         margin-right: 5%;
         padding: none;
     }
+
+    .btn-sm {
+        font-size: initial;
+        padding: .5rem;
+    }
 }
 
-#movies .col-md-3 .well {
+#movies .col-md-4 .well {
     height: 100%;
     margin-bottom: 10%;
 }
 
-#movies .col-md-3 .item {
+#movies .col-md-4 .item {
     padding: 2rem;
-    background-color: #111111;
+    background-color: #292929;
     border-radius: .25rem;
 }
 
-#movies .col-md-3 img {
+#movies .col-md-4 img {
     margin-top: 10%;
     padding-bottom: 10px;
 }
@@ -61,9 +82,9 @@
 }
 
 .contentTitle {
-margin-top: 10%;
-font-size: x-large;
-text-align: center;
+    margin-top:inherit;
+    font-size: x-large;
+    text-align: center;
 } 
 
 .movieTitle {
@@ -76,4 +97,13 @@ text-align: center;
 
 .ratingDivider {
     margin-top: 2%;
+}
+
+.mainButtons {
+    margin-bottom: 10%;
+    float: right;
+}
+
+.btn {
+margin-right: 1rem;
 }
