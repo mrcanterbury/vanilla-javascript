@@ -14,7 +14,7 @@ function getMovies(searchText){
             let output = '';
             $.each(movies, (index, movie) => {
                 output += `
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="well text-center">
                             <div class="item">
                                 <img src="${movie.Poster}">
@@ -72,11 +72,13 @@ function getMovie(){
                 </ul>
                 <br />
                     <div class="well">
-                    <h5>Plot:</h5>
+                    <h5>Film Details:</h5>
                     ${movie.Plot}
                     <hr>
-                    <a class="btn btn-warning" href="http://imdb.com/title/${movie.imdbID}" target="_blank">View on IMDb</a>
-                    <a class="btn btn-primary" href="index.html">Go Back</a> 
+                    <div class ="mainButtons">
+                        <a class="btn btn-warning" href="http://imdb.com/title/${movie.imdbID}" target="_blank">View on IMDb</a>
+                        <a class="btn btn-primary" href="index.html">Go Back</a>
+                    </div>
                 </div>
             </div>
         </div>
